@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voice Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌤️ Voice Weather App</h1>
+      <p id="datetime"></p>
+    </header>
+
+    <main>
+      <div class="controls">
+        <input type="text" id="cityInput" placeholder="Or type a city..." />
+        <div>
+          <button id="getWeather">📍 Location</button>
+          <button id="voiceSearch">🎙️ Speak</button>
+          <button id="manualSearch">🔍 Search</button>
+        </div>
+      </div>
+
+      <div id="weather" class="weather-box">
+        <p>Waiting for input...</p>
+      </div>
+    </main>
+
+    <footer>
+      <p></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
